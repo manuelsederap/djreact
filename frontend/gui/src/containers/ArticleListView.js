@@ -1,5 +1,5 @@
 import React from 'react';
-import Articles from '../components/Article'
+import Articles from '../components/Articles'
 
 
 class ArticleList extends React.Component {
