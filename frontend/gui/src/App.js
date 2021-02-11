@@ -1,3 +1,5 @@
+import BaseRouter from './routes';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import 'antd/dist/antd.css';
 
@@ -7,9 +9,11 @@ import ArticleList from './containers/ArticleListView';
 function App() {
   return (
     <div className="App">
-      <CustomLayout>
-        <ArticleList />
-      </CustomLayout>
+      <Router>
+        <CustomLayout>
+          <BaseRouter />
+        </CustomLayout>
+      </Router>
     </div>
   );
 }
